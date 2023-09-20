@@ -25,9 +25,9 @@ spec:
         - name: vol-cm-nginx-index
           mountPath: /usr/share/nginx/html
       volumes:
-      - name: vol-cm-nginx-index
+      - name: vol-cm-nginx-main
         configMap:
-          name: cm-nginx-index
+          name: cm-nginx-main
 ---
 apiVersion: v1
 kind: Service
