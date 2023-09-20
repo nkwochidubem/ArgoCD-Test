@@ -2,7 +2,7 @@
 apiVersion: v1
 kind: ConfigMap
 metadata:
-  name: cm-nginx-index
+  name: cm-nginx-main
   namespace: {{ .Values.nSpace }}
 data:
 {{ $currentScope := . }}
