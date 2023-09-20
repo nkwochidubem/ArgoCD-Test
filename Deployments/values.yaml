@@ -5,24 +5,13 @@ nSpace: test1
 timzone: Asia/Dhaka
 country: bangladesh
 
-# DOCKER-REGISTRY LOGIN & SECRET
-imageCredentials:
-  registry: index.docker.io
-  username: 
-  password: 
-secret: test-secret
 
 
 
-# CONF
-conf: /opt/seamless/conf
-
-# LOGS
-logs: /var/seamless/log
 
 # DOCKER IMAGE
 image:
-  nginx: sdsdockerhub/nginx-nonroot:v7
+  nginx: nginx:latest
   
 
 # NUMBER OF REPLICAS
