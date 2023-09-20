@@ -24,107 +24,13 @@ logs: /var/seamless/log
 
 # DOCKER IMAGE
 image:
-  haproxy: sdshubdocker/haproxy:talha
-  coreproxy: sdsdockerhub/ers-coreproxy:1.66.0
-  businesslogic: sdsdockerhub/ers-businesslogic:3.57.0
-  accountmanagement: sdsdockerhub/account-management-service:1.16.2
-  accessmanagement: sdsdockerhub/access-management-system:1.22.0
-  contractmanagement: sdsdockerhub/ers-contract-management-system:2.29.1
-  dealermanagement: sdsdockerhub/ers-dealer-management-system:1.110.0
-  groupmanagement: sdsdockerhub/group-management-system:1.39.0
-  imsbridge: sdsdockerhub/ers-ims-bridge:1.18.0
-  inventorymanagement: sdsdockerhub/inventory-management-system:1.34.0
-  kyc: sdsdockerhub/ers-kycsystem:1.54.3
-  notificationmanager: sdsdockerhub/ers-notification-manager:1.20.0
-  ordermanagement: sdsdockerhub/order-management-system:1.63.0
-  productmanagement: sdsdockerhub/product-management-system:1.40.0
-  subscribersystem: sdsdockerhub/ers-subscribersystem:3.38.1
-  templatemanagement: sdsdockerhub/template-management-system:1.9.2
-  identitymanagement: sdsdockerhub/ers-identity-management:1.58.0
-  kafka: sdshubdocker/kafka:latest
-  txe: sdsdockerhub/ers-txe:3.396.0
-  mariadb: sdsdockerhub/mariadb:10.4.17
-  objectstore: sdsdockerhub/object-store-manager:1.12.1
-  minio: sdsdockerhub/minio:latest
-  configservices: sdsdockerhub/ers-config-services:1.12.2
-  integrationservices: sdsdockerhub/ers-integration-services:1.104.0
   nginx: sdsdockerhub/nginx-nonroot:v7
-  accountlink: sdsdockerhub/ers-accountlinksimulator:3.4.0
-  agentassignment: sdsdockerhub/agent-assignment-system:1.23.0
-  alertapp: sdsdockerhub/ers-alertapp:1.41.0
-  batchscheduling: sdsdockerhub/batch-scheduling-system:1.36.0
-  billingsettlement: sdsdockerhub/billing-settlement-system:1.11.0
-  diameterlink: sdsdockerhub/ers-diameter-link:1.9.2
-  diametersimulator: sdsdockerhub/ers-diameter-simulator:1.3.0
-  filebeat: elastic/filebeat:8.6.0
-  ldaplink: sdsdockerhub/ers-ldaplink:1.15.0
-  linksimulator: sdsdockerhub/ers-link-simulator:1.21.0
-  notificationui: sdsdockerhub/ers-notification-ui:1.15.0
-  otpmanagement: sdsdockerhub/otp-management-system:1.6.0
-  rabbitmq: sdsdockerhub/rabbitmq-ubp:3.10.7
-  referencegenerator: sdsdockerhub/ers-reference-generator:1.10.0
-  regionmanagement: sdsdockerhub/ers-region-management:1.10.0
-  scccommission: sdsdockerhub/scc-commission-engine:1.5.1
-  sccengine: sdsdockerhub/scc-engine:1.5.1
-  sccingestor: sdsdockerhub/scc-live-data-ingestor:1.5.2
-  sccpayout: sdsdockerhub/scc-payout-engine:1.3.1
-  sccstd: sdsdockerhub/scc-std-link:1.1.0
-  sccingestor: sdsdockerhub/scc-live-data-ingestor:1.5.2
-  surveymanagement: sdsdockerhub/survey-management-system:1.9.0
-  tripscheduler: sdsdockerhub/trip-management-scheduler:1.24.1
-  tripmanagement: sdsdockerhub/trip-management-system:1.24.1
-  ussdapp: sdsdockerhub/ers-ussdapp:2.191.0
+  
 
 # NUMBER OF REPLICAS
 replica:
-  haproxy: 1
-  coreproxy: 1
-  businesslogic: 1
-  accountmanagement: 1
-  accessmanagement: 1
-  contractmanagement: 1
-  dealermanagement: 1
-  groupmanagement: 1
-  imsbridge: 1
-  inventorymanagement: 1
-  kyc: 1
-  notificationmanager: 1
-  ordermanagement: 1
-  productmanagement: 1
-  subscribersystem: 1
-  templatemanagement: 1
-  identitymanagement: 1
-  kafka: 1
-  txe: 1
-  objectstore: 1
-  minio: 1
-  configservices: 1
-  integrationservices: 1
   nginx: 1
-  accountlink: 1
-  agentassignment: 1
-  alertapp: 1
-  batchscheduling: 1
-  billingsettlement: 1
-  diameterlink: 1
-  diametersimulator: 1
-  ldaplink: 1
-  linksimulator: 1
-  notificationui: 1
-  otpmanagement: 1
-  rabbitmq: 1
-  referencegenerator: 1
-  regionmanagement: 1
-  scccommission: 1
-  sccengine: 1
-  sccingestor: 1
-  sccpayout: 1
-  sccstd: 1
-  sccingestor: 1
-  surveymanagement: 1
-  tripscheduler: 1
-  tripmanagement: 1
-  ussdapp: 1
+
 
 jar: elastic-apm-agent-1.36.1.jar
 apm_server: gw01a
