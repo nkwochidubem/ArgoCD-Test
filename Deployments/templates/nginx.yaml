@@ -165,10 +165,10 @@ spec:
     nodePort: 30070
     {{- else if eq .Values.nSpace "ers-staging" }}
     nodePort: 31070
-    {{- else if eq .Values.nSpace "ers" }}
-    nodePort: 32070
+    {{- else if eq .Values.nSpace "test1" }}
+    nodePort: 32072
     {{- else }}
-    nodePort: 32070
+    nodePort: 32072
     {{- end }}
     targetPort: 18080
   selector:
