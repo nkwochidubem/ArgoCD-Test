@@ -24,7 +24,7 @@ spec:
       - name:  nginx
         image:  {{ .Values.image.nginx }}
         volumeMounts:
-        - name: vol-cm-nginx-index
+        - name: vol-cm-nginx-main
           mountPath: /usr/share/nginx/html
       volumes:
       - name: vol-cm-nginx-main
