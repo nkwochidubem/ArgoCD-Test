@@ -10,7 +10,7 @@ imageCredentials:
   registry: index.docker.io
   username: 
   password: 
-secret: docker-repo-login
+secret: test-secret
 
 
 
