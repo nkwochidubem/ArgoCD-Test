@@ -9,18 +9,20 @@ kind: Deployment
 metadata:
   name:  nginx
 spec:
+  replicas: {{ .Values.replica.nginx }}
+  selector:
+    matchLabels:
+      app: nginx
+      version: v1
   template:
     metadata:
       labels:
-        app:  nginx
+        app: nginx
+        version: v1
     spec:
       containers:
       - name:  nginx
         image:  {{ .Values.image.nginx }}
-  replicas: {{ .Values.image.replica }}
-  selector:
-    matchLabels:
-      app: nginx
         volumeMounts:
         - name: vol-cm-nginx-index
           mountPath: /usr/share/nginx/html
