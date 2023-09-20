@@ -1,22 +1,10 @@
 # NAMSPACE
 nSpace: test1
 
-# COUNTRY & TIMEZONE
-timzone: Asia/Dhaka
-country: bangladesh
 
-
-
-
-
-# DOCKER IMAGE
 image:
   nginx: nginx:latest
-  
 
 # NUMBER OF REPLICAS
 replica:
   nginx: 1
-
-
-

@@ -12,4 +12,3 @@ data:
 {{ .Files.Get $path | indent 6 }}
 {{ end }}
 {{ end }}
----
