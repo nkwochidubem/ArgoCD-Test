@@ -1,5 +1,5 @@
 # NAMSPACE
-nSpace: ers
+nSpace: test1
 
 # COUNTRY & TIMEZONE
 timzone: Asia/Dhaka
@@ -12,9 +12,7 @@ imageCredentials:
   password: 
 secret: docker-repo-login
 
-MYSQL_ROOT_PASSWORD: 
-RABBITMQ_USER: guest
-MINIO_KEY: seamless
+
 
 # CONF
 conf: /opt/seamless/conf
@@ -32,9 +30,7 @@ replica:
   nginx: 1
 
 
-jar: elastic-apm-agent-1.36.1.jar
-apm_server: gw01a
-repo: 
+
 
 loadTesting: false
 resourceApply: false
