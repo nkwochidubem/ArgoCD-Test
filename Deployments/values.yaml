@@ -3,8 +3,8 @@ nSpace: test1
 
 
 image:
-  nginx: nginx:alpine
+  nginx: nginx
 
 # NUMBER OF REPLICAS
 replica:
-  nginx: 1
+  nginx: 2
